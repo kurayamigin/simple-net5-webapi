@@ -1,0 +1,11 @@
+services: 
+  mssql:
+    image: mssql_upgrade:v1
+    container_name: dbc_upgrade
+    ports:
+      - 1433:1433
+    volumes:
+      - C:/Users/a842655/RiderProjects/api5/database/secrets:/var/opt/mssql/secrets
+      - C:/Users/a842655/RiderProjects/api5/database/data:/var/opt/mssql/data
+      - C:/Users/a842655/RiderProjects/api5/database/log:/var/opt/mssql/log
+    
